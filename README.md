@@ -110,11 +110,11 @@ The UI includes mock data fallbacks for all major API calls. This allows the app
 
 ### Project Structure
 src/
-─ auth/           # Authentication logic & guards 
-─ pages/          # Page-level components
-─ components/     # Reusable UI components
-─ api/            # Axios config & API calls
-─ index.css       # Global styles
+- auth/           # Authentication logic & guards 
+- pages/          # Page-level components
+- components/     # Reusable UI components
+- api/            # Axios config & API calls
+- index.css       # Global styles
 
 ### Notes
    - This UI is backend-agnostic as long as required APIs are implemented.
