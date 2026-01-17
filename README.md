@@ -76,48 +76,47 @@ The UI expects the backend server to be running at: http://127.0.0.1:8000
 - `POST /ingestion/trigger/{id}` – Trigger ingestion
 
 ## Installation
-
 ### Prerequisites
 - Node.js 18+
 - npm or yarn
 - Backend running on `http://127.0.0.1:8000`
 
 ### Setup
-git clone <repository-url>
-cd book-mgmt-ui
-npm install
+- git clone <repository-url>
+- cd book-mgmt-ui
+- npm install
 
 ### Development Server
-Run Development server: npm start
-Application would be available at: http://localhost:3000
+- Run Development server: npm start
+- Application would be available at: http://localhost:3000
 
 ### Docker Deployment
-Build Image
-docker build -t book-mgmt-ui .
+- Build Image
+- docker build -t book-mgmt-ui .
 
 ### Run Container
-docker run -p 3000:80 book-mgmt-ui
-Open: http://localhost:3000
+- docker run -p 3000:80 book-mgmt-ui
+- Open: http://localhost:3000
 
 ### Dependencies
-   React 18
-   React Router DOM
-   Axios – API communication
-   React Data Table Component
-   Modern CSS (responsive design)
+  - React 18
+  - React Router DOM
+  - Axios – API communication
+  - React Data Table Component
+  - Modern CSS (responsive design)
 
 ### Mock Data Fallback
 The UI includes mock data fallbacks for all major API calls. This allows the application to remain usable when the backend is unavailable or under development.
 
 ### Project Structure
 src/
-├── auth/           # Authentication logic & guards
-├── pages/          # Page-level components
-├── components/     # Reusable UI components
-├── api/            # Axios config & API calls
-└── index.css       # Global styles
+─ auth/           # Authentication logic & guards 
+─ pages/          # Page-level components
+─ components/     # Reusable UI components
+─ api/            # Axios config & API calls
+─ index.css       # Global styles
 
 ### Notes
-   This UI is backend-agnostic as long as required APIs are implemented.
-   Designed for scalability, admin workflows, and AI-powered search.
-   Works seamlessly with the FastAPI Book Management Agent.
+   - This UI is backend-agnostic as long as required APIs are implemented.
+   - Designed for scalability, admin workflows, and AI-powered search.
+   - Works seamlessly with the FastAPI Book Management Agent.
